@@ -823,6 +823,9 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+.privacy-policy-link {
+  color: #4D5AE5;
+}
 .form-btn {
   display: block;
   padding: 16px 32px;
