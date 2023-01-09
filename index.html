@@ -439,6 +439,7 @@
                   type="email"
                   name="email"
                   placeholder="E-mail"
+                  required
                 />
               </label>
               <button class="subscribe-btn" type="submit">
@@ -467,31 +468,42 @@
             </p>
             <label class="form-field">
               <p class="form-label">Name</p>
-              <input class="form-input" type="text" name="name" />
-              <svg class="form-icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+              <div class="form-input-wraper">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  required
+                  pattern="[a-zA-Z]+"
+                />
+                <svg class="form-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field">
               <p class="form-label">Phone</p>
-              <input class="form-input" type="tel" name="tel" />
-              <svg class="form-icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+              <div class="form-input-wraper">
+                <input class="form-input" type="tel" name="tel" required />
+                <svg class="form-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field">
               <p class="form-label">Email</p>
-              <input class="form-input" type="email" name="email" />
-              <svg class="form-icon" height="24" width="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+              <div class="form-input-wraper">
+                <input class="form-input" type="email" name="email" required />
+                <svg class="form-icon" height="24" width="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </label>
             <label class="form-field">
               <p class="form-label">Comment</p>
               <textarea
                 class="comment"
                 name="comment"
-                rows="5"
                 placeholder="Text input"
               ></textarea>
             </label>

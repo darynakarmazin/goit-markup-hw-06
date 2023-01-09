@@ -651,6 +651,7 @@ footer {
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
 
+  padding: 72px 24px 24px 24px;
   min-width: 408px;
   min-height: 576px;
   background-color: #fcfcfc;
@@ -699,7 +700,6 @@ textarea {
 .form {
   margin-left: auto;
   margin-right: auto;
-  padding: 72px 24px 24px 24px;
 }
 .form-field {
   display: flex;
@@ -724,9 +724,9 @@ textarea {
   color: #8e8f99;
 }
 .form-input {
-  position: relative;
   margin: 0;
   padding: 8px 16px 8px 38px;
+  width: 100%;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -744,10 +744,15 @@ textarea {
 .form-input:active {
   border: 1px solid var(--accent);
 }
+.form-input-wraper {
+  display: block;
+  position: relative;
+}
 .form-icon {
   position: absolute;
+  top: 50%;
   left: 16px;
-  transform: translate(100%, 100%);
+  transform: translate(0, -50%);
   display: inline-block;
   fill: var(--primary-title);
 
@@ -824,7 +829,7 @@ textarea {
   background-position: center;
 }
 .privacy-policy-link {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
 .form-btn {
   display: block;
