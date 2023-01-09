@@ -335,27 +335,26 @@
           </ul>
         </div>
         <form class="subscribe-form" action="">
-          <div role="group" aria-labelledby="subscribe">
+          <form role="group" aria-labelledby="subscribe">
             <p class="subscribe-title" id="subscribe">Subscribe</p>
             <div class="subscribe-row">
-              <div class="subscribe-field">
-                <label class="subscribe-label" for="email"></label>
+              <label class="subscribe-field">
                 <input
                   class="subscribe-input"
                   type="email"
                   name="email"
-                  id="email"
                   placeholder="E-mail"
+                  required
                 />
-              </div>
-              <button class="subscribe-btn" type="reset">
+              </label>
+              <button class="subscribe-btn" type="submit">
                 Subscribe
                 <svg class="subscribe-icon" height="24" width="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
-          </div>
+          </form>
         </form>
       </div>
     </footer>
